@@ -1,19 +1,19 @@
 function TodoItem({ todo, toggleComplete, deleteTodo }) {
   return (
-    <li>
-      <span
-        style={{
-          textDecoration: todo.completed ? "line-through" : "none",
-        }}
-      >
+    <li className="todo-item">
+      <span className={todo.completed ? "todo-text completed" : "todo-text"}>
         {todo.text}
       </span>
 
-      <button onClick={() => toggleComplete(todo.id)}>
-        {todo.completed ? "Undo" : "Complete"}
-      </button>
+      <div className="todo-buttons">
+        <button onClick={() => toggleComplete(todo.id)}>
+          {todo.completed ? "Undo" : "Complete"}
+        </button>
 
-      <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+        <button className="delete-btn" onClick={() => deleteTodo(todo.id)}>
+          Delete
+        </button>
+      </div>
     </li>
   );
 }
