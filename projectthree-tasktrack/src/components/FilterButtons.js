@@ -1,11 +1,26 @@
 function FilterButtons({ filter, setFilter }) {
   return (
     <div>
-      <button onClick={() => setFilter("all")}>All</button>
-      <button onClick={() => setFilter("completed")}>Completed</button>
-      <button onClick={() => setFilter("incomplete")}>Incomplete</button>
+      <button
+        className={filter === "all" ? "active-filter" : ""}
+        onClick={() => setFilter("all")}
+      >
+        All
+      </button>
 
-      <p>Current Filter: {filter}</p>
+      <button
+        className={filter === "completed" ? "active-filter" : ""}
+        onClick={() => setFilter("completed")}
+      >
+        Completed
+      </button>
+
+      <button
+        className={filter === "incomplete" ? "active-filter" : ""}
+        onClick={() => setFilter("incomplete")}
+      >
+        Incomplete
+      </button>
     </div>
   );
 }
