@@ -59,3 +59,7 @@
 .delete-btn:hover {
   background-color: #b91c1c;
 }
+
+.active-filter {
+  background-color: #0f172a;
+}
