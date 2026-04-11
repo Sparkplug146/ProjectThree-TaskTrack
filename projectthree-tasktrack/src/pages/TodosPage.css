@@ -26,7 +26,19 @@
 
 .left-panel form {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.left-panel form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.left-panel form button {
+  width: 100%;
+  padding: 12px;
 }
 
 .left-panel input {
