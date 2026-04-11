@@ -75,3 +75,17 @@
 .active-filter {
   background-color: #0f172a;
 }
+
+.right-panel button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.right-panel button:last-child {
+  margin-bottom: 0;
+}
+
+.todo-text {
+  font-size: 16px;
+}
